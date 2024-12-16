@@ -16,7 +16,7 @@ public protocol TACView: View {
 }
 
 /// TACView extension with body
-extension TACView {
+public extension TACView {
     var body: some View {
         TACViewWithController<Controller, Content>(environment: self.environment) { controller in
             return body(controller)
